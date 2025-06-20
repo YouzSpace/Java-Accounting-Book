@@ -3,14 +3,17 @@ package book;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 public class MainFrame extends JFrame {
 	JButton  addBT;
 	JButton delBT;
 	JButton updateBT;
 	JButton  refreshBT;
+	JLabel bgimg;
 	
 	
 	
@@ -41,6 +44,7 @@ public class MainFrame extends JFrame {
 		delBT = new JButton("删除记录");
 		updateBT = new JButton("修改记录");
 		refreshBT = new JButton("刷新");
+		bgimg = new JLabel(new ImageIcon("img/1bg.jpg"));
 	}
 	
 	public void initLayout() {
@@ -49,10 +53,12 @@ public class MainFrame extends JFrame {
 		delBT.setBounds(350, 60, 100, 40);
 		updateBT.setBounds(550, 60, 100, 40);
 		refreshBT.setBounds(750, 60, 100, 40);
+		bgimg.setBounds(0, 0, 1000, 1000);
 		add(addBT);
 		add(delBT);
 		add(updateBT);
 		add(refreshBT);
+		add(bgimg);
 	}
 	
 	
