@@ -90,7 +90,7 @@ public class MainFrame extends JFrame {
 		setLocationRelativeTo(null);// 设置居中
 		setDefaultCloseOperation(3);// 设置关闭方式，点击x直接退出
 		setTitle("消费记录");// 设置窗口标题
-		setVisible(true);// 设置串口可见
+		setVisible(true);// 设置窗口口可见
 	}
 	
 	public static void main(String[] args) {
