@@ -74,6 +74,7 @@ public class ADDFrame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				ToolsJDBC.add(tf1.getText(), (String) list.getSelectedItem(), tf2.getText(), tf3.getText());
 				JOptionPane.showMessageDialog(null, "³É¹¦");
+
 			}
 		});
 		bt2.addActionListener(new ActionListener() {
